@@ -475,6 +475,37 @@ a:hover {
   background: rgba(0, 0, 0, 0.9);
   padding: 12px 0;
 }
+/*------------------------------------------------------
+HEADER BASE
+-------------------------------------------------------*/
+
+#header-base {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+  background-color: #242424;
+}
+
+#header-base .logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#header-base .logo a {
+  color: #fff;
+}
+
+#header-base .logo img {
+  max-height: 95px;
+}
+
+#header-base.header-scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 12px 0;
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -1439,6 +1470,13 @@ a:hover {
 
 .widget-tags ul li a {
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.form   {
+  padding: 10%;
 }
 
 /*--------------------------------------------------------------
