@@ -75,72 +75,323 @@
 
   <main id="main">
     <section class="form">
-      <div class="row">
-        <div class="col-sm-12">
+      <div class="bg-light py-5">
+        <div>
           <div class="title-box text-center">
-            <h3 class="title-a">
+            <h5 class="title-a">
               Formulário de atendimento
-            </h3>
+            </h5>
             <p class="subtitle-a">
               Preencha o formulário para conclur e iniciar sua jornada de autocuidado.
             </p>
             <div class="line-mf"></div>
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-9 mx-auto align-items-center justify-content-center">
-        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-          <form class="row g-3">
-            <div class="col-md-4">
-              <label for="validationDefault01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-            </div>
-            <div class="col-md-4">
-              <label for="validationDefault02" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
-            </div>
-            <div class="col-md-4">
-              <label for="validationDefaultUsername" class="form-label">Username</label>
-              <div class="input-group">
-                <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                <input type="text" class="form-control" id="validationDefaultUsername"
-                  aria-describedby="inputGroupPrepend2" required>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 col-lg-8 mb-4 mx-auto align-items-center justify-content-center">
+              <div class="card mb-4 border shadow-0">
+                <div class="p-4 d-flex justify-content-between">
+                  <div class="">
+                    <h5>Tem uma conta?</h5>
+                    <p class="mb-0 text-wrap ">Já faz parte da nossa comunidade? Faça o login agora e agilize sua compra
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center flex-column flex-md-row">
+                    <a href="#" class="btn btn-outline-primary me-0 me-md-2 mb-2 mb-md-0 w-100">Cadastrar</a>
+                    <a href="#" class="btn btn-primary shadow-0 text-nowrap w-100">Entrar</a>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <label for="validationDefault03" class="form-label">City</label>
-              <input type="text" class="form-control" id="validationDefault03" required>
-            </div>
-            <div class="col-md-3">
-              <label for="validationDefault04" class="form-label">State</label>
-              <select class="form-select" id="validationDefault04" required>
-                <option selected disabled value="">Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <label for="validationDefault05" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="validationDefault05" required>
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                <label class="form-check-label" for="invalidCheck2">
-                  Agree to terms and conditions
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-          </form>
-        </div>
-      </div>
-      </div>
-      </div>
 
+              <!-- Checkout -->
+              <div class="card shadow-0 border">
+                <div class="p-4">
+                  <h5 class="card-title mb-3">Seus dados</h5>
+                  <div class="row">
+                    <div class="col-6 mb-3">
+                      <p class="mb-0">Nome</p>
+                      <div class="form-outline">
+                        <input type="text" id="typeText" placeholder="Digite aqui" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <p class="mb-0">Sobrenome</p>
+                      <div class="form-outline">
+                        <input type="text" id="typeText" placeholder="Digite aqui" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                      <p class="mb-0">WhatsApp</p>
+                      <div class="form-outline">
+                        <input type="tel" id="typePhone" value="+55 " class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                      <p class="mb-0">Email</p>
+                      <div class="form-outline">
+                        <input type="email" id="typeEmail" placeholder="example@gmail.com" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                      <p class="mb-0">CPF</p>
+                      <div class="form-outline">
+                        <input type="number" id="CPF" placeholder=" " class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                      <p class="mb-0">Data de Nascimento</p>
+                      <div class="form-outline">
+                        <input type="date" id="datenas" placeholder="00/00/000" class="form-control" />
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <hr class="my-4" />
+
+                  <h5 class="card-title mb-3">Dados residências</h5>
+
+                  <div class="row">
+                    <div class="col-sm-8 mb-3">
+                      <p class="mb-0">Endereço</p>
+                      <div class="form-outline">
+                        <input type="text" id="typeText" placeholder="Digite aqui" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 mb-3">
+                      <p class="mb-0">Complemento</p>
+                      <div class="form-outline">
+                        <input type="text" id="typeText" placeholder="Digite aqui" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-6 mb-3">
+                      <p class="mb-0">Bairro</p>
+                      <div class="form-outline">
+                        <input type="text" id="typeText" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-6 mb-3">
+                      <p class="mb-0">Cidade</p>
+                      <div class="form-outline">
+                        <input type="text" id="typeText" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-6 mb-3">
+                      <p class="mb-0">Estado</p>
+                      <div class="form-outline">
+                        <input type="text" id="typeText" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-6 mb-3">
+                      <p class="mb-0">Pais</p>
+                      <div class="form-outline">
+                        <input type="text" id="typeText" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-6 mb-3">
+                      <p class="mb-0">CEP</p>
+                      <div class="form-outline">
+                        <input type="text" id="typeText" class="form-control" />
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" />
+                    <label class="form-check-label" for="flexCheckDefault1">Salvar esse endereço</label>
+                  </div>
+
+                  <hr class="my-4">
+
+                  <h5 class="card-title mb-3">Questionário 1</h5>
+                  <div class="row mb-4 mx-auto align-items-center justify-content-center">
+                    <div>
+                      <p class="mb-3">Por gentileza, selecione até 3 motivos dentre 11 que o(a) levaram a buscar os
+                        serviços de saúde</p>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        1. Investigação Diagnóstica de Transtornos Mentais (p.ex., Transtornos Depressivos, de
+                        Ansiedade, Bipolar, Alimentares, da Personalidade - Borderline, Narcisista, Antissocial, etc -,
+                        Transtorno de Déficit de Atenção/Hiperatividade - TDAH, Transtorno Obsessivo-compulsivo - TOC,
+                        Transtorno do Espectro Autista - TEA, etc)
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        2. Tratamento de Transtornos Mentais já diagnosticados por profissionais de saúde qualificados
+                        (p.ex., Transtornos Depressivos, de Ansiedade, Bipolar, Alimentares, da Personalidade -
+                        Borderline, Narcisista, Antissocial, etc -, Transtorno de Déficit de Atenção/Hiperatividade -
+                        TDAH, Transtorno Obsessivo-compulsivo - TOC, Transtorno do Espectro Autista - TEA, etc)
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        3. Problemas relacionados à Área Profissional (p.ex., aumento de performance/produtividade,
+                        ameaça de perda de emprego, desemprego, transição de emprego ou carreira, decisão e planejamento
+                        de carreira, assédio no ambiente de trabalho, burnout/esgotamento profissional, etc)
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        4. Problemas de Relacionamento (p. ex., entre pais e filhos, irmãos, amigos, com o(a)
+                        parceiro(a), colegas de trabalho, etc)
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        5. Regulação do sono (Características - dificuldade para iniciar e manter o sono; e/ou
+                        frequentemente acorda cansado(a), e/ou com o humor desregulado, e/ou com prejuízo no desempenho
+                        de tarefas)
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        6. Problemas relacionados ao comportamento alimentar e a imagem corporal (Características -
+                        supervalorização do peso corporal, forma corporal como critério fundamental da autoestima,
+                        sensação de perda de controle sobre a alimentação/compulsão alimentar, utilização de métodos
+                        extremos para o controle do peso, regulação de humor através da alimentação)
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        7. Vícios (p.ex., uso, abuso e/ou dependência de álcool, tabaco, cafeína, cannabis,
+                        alucinógenos, sedativos, hipnóticos, ansiolíticos, sedativos; em pornografia, celular, redes
+                        sociais, jogos, internet, etc)
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        8. Problemas relacionados à História Pessoal de Trauma Psicológico (p.ex., proveniente do
+                        processo de abuso, maus-tratos, e/ou negligência por pessoas próximas, do luto, de crimes, de
+                        acidentes, de doenças e dores crônicas ou agudas, problemas educacionais, econômicos, etc)
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        9. Tratamento e manejo de pensamentos e/ou comportamentos autolesivos, de natureza suicida ou
+                        não.
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        10. Desenvolvimento pessoal (p. ex., desenvolver habilidades de modificação e manutenção de
+                        comportamentos, de solução de problemas, de julgamento e tomada de decisão, de enfrentamento e
+                        regulação emocional, de gerenciamento de tempo, sociais/interpessoais, aumento da performance,
+                        etc)
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        11. Outros
+                      </label>
+                    </div>
+                  </div>
+
+                  <hr class="my-4" />
+
+                  <h5 class="card-title mb-3">Questionário 2</h5>
+                  <div class="row">
+                    <p>Por gentileza, descreva em detalhes quais seriam os seus principais motivos para buscar
+                      atendimento</p>
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                        style="height: 150px"></textarea>
+                      <label for="floatingTextarea">Entendendo melhor a sua necessidade, podemos te ajudar de maneira
+                        mais assertiva.</label>
+                    </div>
+
+                    <hr class="my-4" />
+
+                    <h5 class="card-title mb-3">Questionário 3</h5>
+                    <div class="row">
+                      <h6>Por gentileza, pensando em atendimento psicológico, estabeleça um limite de valor que seja
+                        confortável para sua saúde financeira.</h6>
+                      <p>Os valores das sessões com os psicólogo(a)s variam de acordo com a titulação,
+                        trajetória e experiência clínica do profissional; e disponibilidade de agenda.</p>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          R$ 200,00 sessão ou pacote 4 sessões R$ 700,00
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          R$ 250,00 sessão ou pacote 4 sessões R$ 900,00
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          R$ 300,00 sessão ou pacote 4 sessões R$ 1.100,00
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          R$ 400,00 sessão ou pacote 4 sessões R$ 1.500,00
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          R$ 500,00 sessão ou pacote 4 sessões R$ 1.900,00
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          R$ 600,00 sessão ou pacote 4 sessões R$ 2.300,00
+                        </label>
+                      </div>
+
+                    </div>
+
+                    <hr class="my-4">
+                    <div class="container">
+                      <div class="float-end">
+                        <button class="btn btn-secondary shadow-0 border">Enviar</button>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                        <label class="form-check-label" for="flexCheckDefault">Mantenha-me atualizado sobre as
+                          novidades</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
     </section>
+    <!-- Checkout -->
 
 
 
